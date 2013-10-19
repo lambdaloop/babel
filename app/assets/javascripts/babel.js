@@ -145,7 +145,7 @@ function pressArrowKey(key) {
         default:
             break;
         }
-        $('#text_overlay').html(current_book[current_page]);
+        $('#text_overlay').html(current_book[current_page]+"<br/><center>"+(current_page+1)+"</center>");
     } else {
         switch(key) {
         case LEFT:
@@ -197,7 +197,7 @@ function pressSpace() {
                 success: function(data) {
                     current_book = data.text;
                     current_page = 0;
-                    $('#text_overlay').html(current_book[0]);
+                    $('#text_overlay').html(current_book[0]+"<br/><center>"+(current_page+1)+"</center>");
                     $('#text_overlay').removeClass("Hidden");
                     $('#game_box').addClass('Hidden');
                     book_displayed = true;

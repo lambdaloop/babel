@@ -29,7 +29,7 @@ class TextController < ApplicationController
     m = /([pn])([0-9]+)x([pn])([0-9]+)/
     match = m.match(params[:pos])
     if match.blank?
-      out = false
+      @pos = "p0xp0"
     else
       x = match[2].to_i
       x = -1 * x if match[1] == "n"

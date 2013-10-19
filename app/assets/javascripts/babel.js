@@ -41,7 +41,8 @@ $(document).ready(function() {
     updatePerson();
     box_pos = $('#data_box').data('pos');
     box_x = $('#data_box').data('x');    
-    box_y = $('#data_box').data('y');    
+    box_y = $('#data_box').data('y');
+    updateURL();
     // history.pushState({}, 'title', '/babel/p0xp1');
 });
 

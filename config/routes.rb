@@ -9,6 +9,8 @@ Babel::Application.routes.draw do
   
   get 'babel/:pos' => 'text#babel'
 
+  root 'text#babel'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

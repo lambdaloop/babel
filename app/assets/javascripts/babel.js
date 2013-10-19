@@ -138,9 +138,15 @@ function pressArrowKey(key) {
         switch(key) {
         case LEFT:
             current_page -= 1;
+            if(current_page < 0) {
+                current_page = 0;
+            }
             break;
         case RIGHT:
             current_page += 1;
+            if(current_page >= current_book.length) {
+                current_page = current_book.length - 1;
+            }
             break;
         default:
             break;
